@@ -1,0 +1,85 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+/* icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+
+/* color */
+:root {
+  --page-bg: #181a1d;
+  --aside-bg: #222529;
+  --aside-font: #83878b;
+  --main-blue: #1527b0;
+  --chart-green: #649202;
+  --green: #9ddc08;
+  --hover-green: #8cb414;
+  --forest-green: #3c8500;
+  --rose-brown: #a85e66;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+em,
+i,
+address {
+  font-style: normal;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  word-break: keep-all;
+}
+
+.slick-track,
+.slick-list {
+  transition-delay: 0.03s;
+}
+
+.nav_on {
+  position: relative;
+  background-color: var(--hover-green);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.itm_bg {
+  background-color: var(--aside-bg);
+  border-radius: 10px;
+}
