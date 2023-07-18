@@ -9,8 +9,8 @@
 /* color */
 :root {
   --page-bg: #181a1d;
-  --aside-bg: #222529;
-  --aside-font: #83878b;
+  --nav-bg: #222529;
+  --nav-font: #b8b8b8;
   --main-blue: #1527b0;
   --chart-green: #649202;
   --green: #9ddc08;
@@ -70,13 +70,6 @@ body {
 .slick-track,
 .slick-list {
   transition-delay: 0.03s;
-}
-
-.nav_on {
-  position: relative;
-  background-color: var(--hover-green);
-  border-radius: 10px;
-  color: #fff;
 }
 
 .itm_bg {

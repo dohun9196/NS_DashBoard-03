@@ -20,186 +20,66 @@
     <!-- { header -->
     <header class="Header">
       <h1 class="Logo">
-        <a href="./index.html">
-          <img src="./img/logo.png" alt="" />
-        </a>
+        <img src="./img/logo.png" alt="" />
       </h1>
-      <nav class="Gnb">
-        <ul>
-          <li>
-            <a href="javascript:void(0)" title="알림">
-              <i class="bi bi-bell"></i>
+      <nav class="gnb">
+        <!-- 메인  -->
+        <ul class="home">
+          <li class="fr_li nav_list">
+            <a href="/">
+              <i class="bi bi-house"></i>
+              <span>메인페이지</span>
             </a>
           </li>
-          <li>
-            <a href="javascript:void(0)" title="로그아웃">
-              <i class="bi bi-power"></i>
-            </a>
+        </ul>
+        <!-- 메뉴 -->
+        <ul class="_menu">
+          <li class="nav_list">
+            <div class="nav_tit">
+              <i class="bi bi-display"></i>
+              <span>모니터링</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+            <ul class="drop_down">
+              <li><a href="javascript:void(0)">장비 모니터링</a></li>
+              <li><a href="javascript:void(0)">전력 모니터링</a></li>
+              <li><a href="javascript:void(0)">유량 모니터링</a></li>
+              <li><a href="javascript:void(0)">가스 모니터링</a></li>
+              <li><a href="javascript:void(0)">대기 모니터링</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <div class="nav_tit">
+              <i class="bi bi-bar-chart-line"></i>
+              <span>분석</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+            <ul class="drop_down">
+              <li><a href="javascript:void(0)">전력 분석</a></li>
+              <li><a href="javascript:void(0)">패턴 분석</a></li>
+              <li><a href="javascript:void(0)">계측 분석</a></li>
+            </ul>
+          </li>
+          <li class="nav_list">
+            <div class="nav_tit">
+              <i class="bi bi-gear"></i>
+              <span>환경설정</span>
+              <i class="bi bi-chevron-down"></i>
+            </div>
+            <ul class="drop_down">
+              <li><a href="javascript:void(0)">페이지 설정</a></li>
+              <li><a href="javascript:void(0)">계측기 관리</a></li>
+            </ul>
           </li>
         </ul>
       </nav>
     </header>
     <!-- header } -->
 
-    <!-- { aside -->
-    <aside class="Side_menu">
-      <ul>
-        <li class="list">
-          <span class="list_tit">모니터링</span>
-          <ul class="drop_nav">
-            <li class="fr_load">
-              <a href="javascript:void(0)">
-                <i class="bi bi-house-door"></i>
-                <span>통합 모니터링</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-display"></i>
-                <span>장비 모니터링</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-display"></i>
-                <span>전력 모니터링</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-display"></i>
-                <span>유량 모니터링</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-display"></i>
-                <span>가스 모니터링</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-display"></i>
-                <span>대기 모니터링</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="list">
-          <span class="list_tit">분석</span>
-          <ul class="drop_nav">
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-lightning"></i>
-                <span>전력 분석</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-grid"></i>
-                <span>패턴 분석</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-bar-chart-line"></i>
-                <span>계측 분석</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="list">
-          <span class="list_tit">설정</span>
-          <ul class="drop_nav">
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-globe"></i>
-                <span>페이지 설정</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <i class="bi bi-gear"></i>
-                <span>계측기 관리</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="list">
-          <span class="list_tit">다크모드</span>
-          <div class="toggle_mod">
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider round"></span>
-            </label>
-            <p>ON</p>
-            <p style="display: none">OFF</p>
-          </div>
-        </li>
-      </ul>
-    </aside>
-    <!-- aside } -->
-
     <!-- { main -->
     <main>
       <div class="Wrap">
-        <section class="Monitoring">
-          <!-- 전력사용량 -->
-          <div class="power">
-            <div class="day_elec elec_box itm_bg">
-              <div class="ico">
-                <span>DAY</span>
-              </div>
-              <div class="desc">
-                <div class="tit">당일 전력사용량</div>
-                <div class="kwh">7,878 kwh</div>
-                <div class="before_elec">
-                  <p>전일 전력사용량</p>
-                  <span>6,972 kwh</span>
-                </div>
-              </div>
-            </div>
-            <div class="week_elec elec_box itm_bg">
-              <div class="ico">
-                <span>WEEK</span>
-              </div>
-              <div class="desc">
-                <div class="tit">당일 전력사용량</div>
-                <div class="kwh">7,878 kwh</div>
-                <div class="before_elec">
-                  <p>전일 전력사용량</p>
-                  <span>6,972 kwh</span>
-                </div>
-              </div>
-            </div>
-            <div class="month_elec elec_box itm_bg">
-              <div class="ico">
-                <span>MONTH</span>
-              </div>
-              <div class="desc">
-                <div class="tit">당일 전력사용량</div>
-                <div class="kwh">7,878 kwh</div>
-                <div class="before_elec">
-                  <p>전일 전력사용량</p>
-                  <span>6,972 kwh</span>
-                </div>
-              </div>
-            </div>
-            <div class="year_elec elec_box itm_bg">
-              <div class="ico">
-                <span>YEAR</span>
-              </div>
-              <div class="desc">
-                <div class="tit">당일 전력사용량</div>
-                <div class="kwh">7,878 kwh</div>
-                <div class="before_elec">
-                  <p>전일 전력사용량</p>
-                  <span>6,972 kwh</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section class="Monitoring"></section>
       </div>
     </main>
   </body>

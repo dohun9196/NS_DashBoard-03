@@ -1,0 +1,265 @@
+* {
+  -outline: 1px solid #f00;
+}
+
+/* header */
+.Header {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  background-color: var(--page-bg);
+  z-index: 999;
+}
+
+.Header .Logo {
+  width: 270px;
+  line-height: 80px;
+  background: var(--aside-bg);
+}
+.Header .Logo a {
+  display: block;
+  text-align: center;
+  padding: 0 30px;
+
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.Header .Gnb {
+}
+.Header .Gnb > ul {
+  display: flex;
+  gap: 10px;
+  padding: 0 50px 0 0;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+.Header .Gnb > ul > li {
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #3b6de6 0%, var(--main-blue) 100%);
+}
+.Header .Gnb > ul > li:hover {
+  color: #fff;
+  background: linear-gradient(to bottom, #5b8ee6 0%, var(--main-blue) 100%);
+}
+.Header .Gnb > ul > li > a {
+  display: block;
+  text-align: center;
+
+  width: 40px;
+  height: 40px;
+}
+.Header .Gnb > ul > li > a > i {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}
+
+.Side_menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+
+  width: 270px;
+  height: 100%;
+  background-color: var(--aside-bg);
+  /* box-shadow: 0 3px 9px 0 rgba(255, 255, 255, 0.21); */
+  color: var(--aside-font);
+}
+
+.Side_menu > ul {
+  padding: 30px 0;
+}
+
+.Side_menu > ul .list {
+  margin: 0 0 30px 0;
+}
+.Side_menu > ul .list .list_tit {
+  position: relative;
+}
+
+.Side_menu > ul .list .list_tit::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+
+  width: 70%;
+  height: 1px;
+  background-color: var(--aside-font);
+}
+
+.Side_menu > ul > li > span {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0 0 10px 30px;
+}
+
+.Side_menu .drop_nav {
+}
+
+.Side_menu .drop_nav > li {
+  padding: 3px 0;
+}
+
+.Side_menu .drop_nav > li > a {
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 0 35px;
+  transition: 0.45s;
+}
+
+.Side_menu .drop_nav > li:hover a {
+  color: #fff;
+}
+
+.Side_menu .drop_nav > li > a > i {
+  display: inline-block;
+
+  margin-right: 10px;
+
+  color: #fff;
+}
+.Side_menu .drop_nav > li > a > span {
+  display: inline-block;
+  padding: 15px 0px;
+}
+
+/* 다크모드 토글 */
+.Side_menu .toggle_mod {
+  padding: 0 35px;
+}
+.Side_menu .toggle_mod span {
+  display: block;
+}
+
+.Side_menu .toggle_mod .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.Side_menu .toggle_mod .switch input {
+  display: none;
+}
+
+.Side_menu .toggle_mod .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--hover-green);
+  transition: 0.4s;
+}
+
+.Side_menu .toggle_mod .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.Side_menu .toggle_mod input:checked + .slider {
+  background-color: #ccc;
+}
+
+.Side_menu .toggle_mod input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+.Side_menu .toggle_mod input:checked + .slider:before {
+  transform: translateX(34px);
+}
+
+.Side_menu .toggle_mod .slider.round {
+  border-radius: 30px;
+}
+
+.Side_menu .toggle_mod .slider.round:before {
+  border-radius: 50%;
+}
+
+.Side_menu .toggle_mod p {
+  margin: 0 0 0 10px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* main */
+.Monitoring {
+  height: 100vh;
+  background-color: var(--page-bg);
+  box-shadow: 0px 4px 9px 0px rgba(255, 255, 255, 0.21);
+
+  padding: 130px 50px 50px 320px;
+}
+
+.Monitoring .power {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  float: left;
+  width: 50%;
+}
+.Monitoring .power .elec_box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.Monitoring .power .elec_box .ico {
+  flex: 0 0 15%;
+  background: #3b6de6;
+  padding: 0 10px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.Monitoring .power .elec_box .ico span {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 108px;
+}
+.Monitoring .power .elec_box .desc {
+  padding: 10px 0;
+}
+.Monitoring .power .elec_box .desc .tit {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 0 5px 0;
+}
+.Monitoring .power .elec_box .desc .kwh {
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+.Monitoring .power .elec_box .desc .before_elec p {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 0 5px 0;
+}
+.Monitoring .power .elec_box .desc .before_elec span {
+  font-size: 13px;
+  font-weight: 300;
+}
